@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Portfolio</title>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+
+.landing {
+    background: url('https://wallpaperaccess.com/full/5651990.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white(246, 253, 254);
+}
+
+.landing .content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.landing h1 {
+    font-size: 3.5rem;
+}
+
+.landing p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.landing .cta-btn {
+    text-decoration: none;
+    background-color: #FF5C8D;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.landing .cta-btn:hover {
+    background-color: #FF3B6F;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+   
+}
+
+.about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.about ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about li {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FF5C8D;
+    padding: 50px 20px;
+    color: white;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background-color: #fff;
+    color: #FF5C8D;
+    padding: 12px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #f8f8f8;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links li a:hover {
+    color: #FF5C8D;
+}
+</style>
+</head>
+<body>
+    <!-- Landing Section -->
+    <header class="landing">
+        <div class="content">
+            <a href="#about" class="cta-btn">My Portfolio</a>
+
+        </div>
+    </header>
+
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="">
+            <p>
+            Hello! I'm  Vaishal Binu web developer with a love for creating elegant and functional websites,
+            I have completed my schooling at CMS Matric Hr Sec School
+            And I'm doing my college in KG College Of Arts And Science.
+            </p>
+            <h3>Skills</h3>
+           
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>UI/UX Design</li>
+                <li>C,C++,Java</li>
+                <li>Version Control (Git, GitHub)</li>
+            </ul>
+            <h3>Certifications</h3>
+            <ul>
+                <li>
+                     <a href="https://www.coursera.org/account/accomplishments/certificate/QGA3KJOT4SWA"> HTML and CSS:Building a single page website</a>
+                    </li>
+                <li>
+                       <a href="https://www.coursera.org/account/accomplishments/certificate/7UIKUO6OHQJ3">Getting Started with Linux Terminal</a>
+                    </li>
+                <li>
+                     <a href="https://www.coursera.org/account/accomplishments/certificate/PB7ZJ1T3FYF8">  Data Structures: python For Beginners</a>
+                    </li>
+                <li>
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/1LTNM1B48KR1"> Getting started with Java</a>
+                    </li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+  
+    <footer class="footer">
+        <div class="container">
+            <p>Find me on</p>
+            <ul class="social-links">
+                <li>Email:vaishal27141@gmail.com</li>
+                <li><a href="https://in.linkedin.com/in/vaishal-b-923643302">Linkedin</a></li>
+                <li><a href="https://github.com/vaishalmickey">GitHub</a></li>
+       
+            </ul>
+          
+        </div>
+    </footer>
+
+  
+</body>
+</html>
